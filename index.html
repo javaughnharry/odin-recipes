@@ -3,28 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Odin Recipes Project</title>
 </head>
 <body>
     <h1 style="display: flex;
     flex-direction: column;
     align-items: center;">Odin Recipes</h1>
     <div>
-        <img style="display: flex;
+        <video src="./resources/videos/grilled-cheese-sandwich-song.mp4" 
+        height="300" width="500"
+        style="display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: auto;"
+        controls loop playsinline
+        poster="https://bod-blog-assets.prod.cd.beachbodyondemand.com/bod-blog/wp-content/uploads/2022/08/31155337/cooking-memes-600-fried-rice.jpg"></video>
+        <!-- <img style="display: flex; 
         flex-direction: column;
         justify-content: center;
         align-items: center;
         margin: auto;"
         src="https://bod-blog-assets.prod.cd.beachbodyondemand.com/bod-blog/wp-content/uploads/2022/08/31155337/cooking-memes-600-fried-rice.jpg" alt=""
-        height="300" width="300">
+        height="300" width="300"> -->
     </div>
     <ul style="list-style-type: none;
     display: flex;
     flex-direction: column;
     align-items: center;">
-        <li><a style="text-decoration: none;" href="./recipes/lasagna.html">Lasagna</a></li>
-        <li><a style="text-decoration: none;" href="./recipes/pizza.html">Pizza</a></li>
-        <li><a style="text-decoration: none;" href="./recipes/10-minute-spicy-korean-noodles.html">10-Minute-Noodles</a></li>
+        <li><a style="text-decoration: none;" href="./recipes/lasagna.html"><button class="recipes">Lasagna</button></a></li>
+        <li><a style="text-decoration: none;" href="./recipes/pizza.html"><button class="recipes">Pizza</button></a></li>
+        <li><a style="text-decoration: none;" href="./recipes/10-minute-spicy-korean-noodles.html"><button class="recipes">10-Minute-Noodles</button></a></li>
     </ul>
+    <style>
+        .recipes{
+            margin: 10px 10px 10px 10px;
+            transition: 0.5s;
+            cursor: pointer;
+        }
+        .recipes:hover{
+            background: linear-gradient(90deg,#ffffff,rgb(0, 195, 255));
+        }
+    </style>
 </body>
 </html>
